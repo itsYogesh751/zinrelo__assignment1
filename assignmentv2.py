@@ -4,6 +4,7 @@ import datetime
 import sys
 import os
 
+
 """Order class for initializing orderId and user object"""
 class Order:                           
     def __init__(self,orderId,user):
@@ -42,7 +43,7 @@ class User:
             n-=1
         return True
     
-    """To check whether age is 21 or older using datetime object"""
+    """To check whether age is 21 or older using datetime object and return true if age is 21 or older"""
     def is_valid_age(self,current_date):
         birthdate = datetime.datetime.strptime(self.birthdate, "%m/%d/%Y").date()
         current_date=datetime.datetime.strptime(current_date,"%Y-%m-%d").date()
